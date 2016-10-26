@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Барбершоп каталог</title>
+  <title>Барбершоп «Бородинский»</title>
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
     <div class="container">
+      <div class="logo">
+        <a href="#"><img src="#" alt="logo" /></a>
+      </div>
       <nav class="main-navigation">
         <ul>
-          <li>
-            <a href="#"><img src="#" alt="logo" /></a>
-          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -46,113 +46,98 @@
           <li><a class="active" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
         </ul>
       </div>
-      <div class="filter">
-        <form action="/ehco" method="post">
-          <p class="filer-title">ПРОИЗВОДИТЕЛИ:</p>
-          <input id="Baxter-of-california" type="checkbox" name="Baxter-of-california" checked value="Baxter-of-California">
-          <label for="Baxter-of-california">Baxter of California</label>
-          <br>
-          <input id="Mr-Natty" type="checkbox" name="Mr-Natty" value="Mr-Natty">
-          <label for="Mr-Natty">Mr Natty</label>
-          <br>
-          <input id="Suavecito" type="checkbox" name="Suavecito" value="Suavecito" checked>
-          <label for="Suavecito">Suavecito</label>
-          <br>
-          <input id="Malin-Goetz" type="checkbox" name="Malin-Goetz" checked value="Malin-Goetz">
-          <label for="Malin-Goetz">Malin+Goetz</label>
-          <br>
-          <input id="Murrays" type="checkbox" name="Murrays" value="Murrays">
-          <label for="Murrays">Murray’s</label>
-          <br>
-          <input id="american-crew " type="checkbox" name="American-crew" value="American-crew" checked>
-          <label for="american-crew">American Crew </label>
-          <input type="submit" value="Показать">
-        </form>
+      <div class="sidebar">
+        <div class="filter">
+          <form action="/ehco" method="post">
+            <span class="filer-title">ПРОИЗВОДИТЕЛИ:</span>
+            <div class="checkbox-item">
+            <input id="Baxter-of-california" type="checkbox" name="Baxter-of-california" checked value="Baxter-of-California">
+            <label for="Baxter-of-california">Baxter of California</label>
+            </div>
+            <div class="checkbox-item">
+            <input id="Mr-Natty" type="checkbox" name="Mr-Natty" value="Mr-Natty">
+            <label for="Mr-Natty">Mr Natty</label>
+            </div>
+            <div class="checkbox-item">
+            <input id="Suavecito" type="checkbox" name="Suavecito" value="Suavecito" checked>
+            <label for="Suavecito">Suavecito</label>
+            </div>
+            <div class="checkbox-item">
+            <input id="Malin-Goetz" type="checkbox" name="Malin-Goetz" checked value="Malin-Goetz">
+            <label for="Malin-Goetz">Malin+Goetz</label>
+            </div>
+            <div class="checkbox-item">
+            <input id="Murrays" type="checkbox" name="Murrays" value="Murrays">
+            <label for="Murrays">Murray’s</label>
+          </div>
+            <div class="checkbox-item">
+            <input id="american-crew " type="checkbox" name="American-crew" value="American-crew" checked>
+            <label for="american-crew">American Crew </label>
+          </div>
+            <input type="submit" value="Показать">
+          </form>
+        </div>
       </div>
       <div slass="search-result-wrapper">
         <div class="search-result">
           <div class="catalog-item">
-            <img src="#" alt="baxter-of-california-travel" />
-            <p class="name-product">Набор для путешествий «Baxter of California»</p>
+            <a href="#"><img src="#" alt="baxter-of-california-travel" /></a>
+            <a href="#"><p class="name-product">Набор для путешествий «Baxter of California»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>2 900 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">2 900 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
             </div>
           </div>
           <div class="catalog-item">
-            <img src="#" alt="baxter-of-california-conditioner" />
-            <p class="name-product">Увлажняющий кондиционер «Baxter of California»</p>
+            <a href="#"><img src="#" alt="baxter-of-california-conditioner" /></a>
+            <a href="#"><p class="name-product">Увлажняющий кондиционер «Baxter of California»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>750 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">750 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
+            </div>
             </div>
           </div>
           <div class="catalog-item">
-            <img src="#" alt="«SUAVECITO»" />
-            <p class="name-product">Гель для волос «SUAVECITO»</p>
+            <a href="#"><img src="#" alt="«SUAVECITO»" /></a>
+            <a href="#"><p class="name-product">Гель для волос «SUAVECITO»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>290 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">290 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
             </div>
           </div>
           <div class="catalog-item">
-            <img src="#" alt="American crew" />
-            <p class="name-product">Глина для укладки волос «American crew»</p>
+            <a href="#"><img src="#" alt="American crew" /></a>
+            <a href="#"><p class="name-product">Глина для укладки волос «American crew»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>500 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">500 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
             </div>
           </div>
           <div class="catalog-item">
-            <img src="#" alt="AMERICAN CREW" />
-            <p class="name-product">Гель для волос «AMERICAN CREW»</p>
+            <a href="#"><img src="#" alt="AMERICAN CREW" /></a>
+            <a href="#"><p class="name-product">Гель для волос «AMERICAN CREW»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>300 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">300 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
             </div>
           </div>
           <div class="catalog-item">
-            <img src="#" alt="Baxter of California" />
-            <p class="name-product">Набор для бритья «Baxter of California»</p>
+            <a href="#"><img src="#" alt="Baxter of California" /></a>
+            <a href="#"><p class="name-product">Набор для бритья «Baxter of California»</p></a>
             <div class="product-buy">
-              <div class="price">
-                <p>290 РУБ.</p>
-              </div>
-              <div class="buy">
-                <a href="#">КУПИТЬ</a>
-              </div>
+              <span class="rate">3 900 РУБ.</span>
+              <span class="buy"><a href="#">КУПИТЬ</a></span>
             </div>
           </div>
         </div>
         <div class="pagelinks">
-          <span class="page-active">1</span>
-          <a href="#">2</a>
+          <a href="#">1</a>
+          <span class="page-active">2</span>
           <a href="#">3</a>
           <a href="#">4</a>
         </div>
       </div>
     </div>
-  </div>
   <footer>
     <div class="footer-wrapper">
       <div class="footer-contacts">
