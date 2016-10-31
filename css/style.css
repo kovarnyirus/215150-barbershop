@@ -20,3 +20,28 @@ h2 {
   font-weight: bold;
   text-transform:uppercase;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+.logo{
+  float: left;
+  width: 115px;
+}
+.main-navigation{
+  float: left;
+  width: 540px;
+}
+.user-block{
+  width: 120px;
+  float: right;
+}
+.content-wrapper{
+  width: 940px;
+  margin: 0 auto;
+}
