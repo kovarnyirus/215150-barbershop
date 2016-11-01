@@ -45,3 +45,16 @@ h2 {
   width: 940px;
   margin: 0 auto;
 }
+.sidebar{
+  float: left;
+  width: 170px;
+}
+.search-result-wrapper{
+  float: right;
+  width: 700px;
+}
+.catalog-item{
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+}
