@@ -127,18 +127,68 @@ a {
 
 .main-navigation .menu-active{
   position: relative;
+  background-color: none;
 }
 .main-navigation .menu-active::after{
   content: "";
   position: absolute;
-  width: 100%;
   height: 5px;
-  background-color: #fff; 
+  background-color: #fff;
+  right: 20px;
+   bottom: 0;
+   left: 20px;
+}
+.main-navigation .menu-active a:hover {
+  background: none;
 }
 .content-wrapper {
   width: 960px;
   margin: 0 auto;
 }
+.breadcrumbs{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: -7px;
+  padding-left: 11px;
+}
+.content-head{
+  margin-bottom: 53px;
+}
+.content-head h1{
+  padding-left: 11px;
+}
+.breadcrumbs li{
+  line-height: 24px;
+  position: relative;
+  display: inline-block;
+  padding-right: 40px;
+}
+.breadcrumbs li::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  top: 9px;
+  right: 16px;
+  transform: rotate(45deg);
+}
+.breadcrumbs a{
+color: #000;
+
+}
+.breadcrumbs .active{
+  color: aba9a7;
+}
+.breadcrumbs .active::after{
+display: none;
+}
+
+.breadcrumbs a:hover{
+text-decoration: underline;
+}
+
 
 .sidebar {
   float: left;
@@ -190,10 +240,12 @@ a {
 
 
 /* catalog-item*/
-
+.main-photo{
+  margin-bottom: 13px;
+}
 .photo-product {
   float: left;
-  width: 460px;
+  width: 470px;
   margin-right: 0px;
   margin-left: 10px;
   margin-bottom: 20px;
@@ -205,56 +257,160 @@ a {
 
 .additional-foto a {
   width: 140px;
-  margin-right: 16px;
+  margin-right: 18px;
 }
-
-.rate::after {
-  width: 109px;
-  height: 43px;
-  background-color: #fff;
-}
-
 .product-description {
+  padding-top: 16px;
   float: right;
-  width: 390px;
+  width: 399px;
 }
-
-.set-complete li {
-  list-style: none;
-  margin-left: -40px;
+.provider-info{
+  padding-bottom: 15px;
 }
-
+.product-article{
+  float: right;
+  padding-right: 20px;
+}
+.description{
+  padding-bottom: 23px;
+  line-height: 24px;
+}
 .product-buy {
   background-color: #e5e5e5;
   width: 187px;
   height: 43px;
+  margin-bottom: 61px;
 }
+.product-buy span{
+  display: inline-block;
+  text-align: center;
+}
+.rate{
+  padding: 8px 30px;
+  padding-right: 21px;
+
+  background-color: inherit;
+}
+.buy{
+  color: #fff;
+  padding: 8px 18px;
+  background-color: #000;
+}
+.buy a{
+  color: #fff;
+}
+.set-complete h2{
+  line-height: 30px;
+  margin-bottom: 27px
+}
+.set-complete ul{
+  margin: 0;
+  padding: 0;
+}
+.set-complete li {
+  line-height: 24px;
+  position: relative;
+  list-style: none;
+  padding-left: 21px;
+}
+.set-complete li::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  top: 8px;
+  left: 2px;
+  transform: rotate(45deg);
+}
+
+
 
 
 /* footer*/
 
 .main-footer {
-  margin-top: 49px;
+  line-height: 24px;
+  background-color: #1f1f1f;
+  color: #fff;
+  margin-top: 22px;
+}
+.main-footer a{
+  color: #fff;
 }
 
 .footer-wrapper {
   width: 960px;
   margin: 0 auto;
-  padding: 0 10px
+  padding: 0 10px;
+  padding-top: 55px;
+  padding-bottom: 40px;
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+  padding-left: 13px;
+}
+.footer-contacts a{
+  text-decoration: underline;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
+  text-align: center;
   float: left;
   width: 180px;
+  margin-top: -14px;
+}
+.social-btn-vk{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background-image: url(../img/bordershop-sprite.png);
+  background-position: -49px -4px;
+}
+.social-btn-fb{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background-image: url(../img/bordershop-sprite.png);
+  background-position: -94px -4px;
+}
+.social-btn-inst{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background-image: url(../img/bordershop-sprite.png);
+  background-position: -141px -4px;
 }
 
 .footer-copyright {
+  text-align: center;
   float: right;
   width: 180px;
+
+  margin-top: -13px;
+}
+.btn-copyright{
+  display:block;
+  text-align: right;;
+  width: 140px;
+  padding: 10px 20px;
+  background-color: #000;
 }
