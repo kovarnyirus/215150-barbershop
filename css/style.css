@@ -156,15 +156,15 @@ a {
   padding: 0 10px
 }
 
+.content-head {
+  margin-bottom: 27px;
+}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-top: -7px;
-}
-
-.content-head {
-  margin-bottom: 27px;
 }
 
 .breadcrumbs li {
